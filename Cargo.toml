@@ -1,0 +1,22 @@
+[package]
+name = "zblue"
+version = "0.1.0"
+authors = ["Giuseppe Eletto <giuseppe@eletto.me>"]
+license = "MIT OR Apache-2.0"
+edition = "2024"
+
+[dependencies]
+uuid = "1.29"
+
+[dependencies.serde_core]
+version = "1.0"
+default-features = false
+
+[dependencies.tokio]
+version = "1.54"
+features = ["sync"]
+
+[dependencies.zbus]
+version = "6.5"
+default-features = false
+features = ["object-manager", "proxy", "service", "tokio"]
